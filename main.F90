@@ -1,5 +1,5 @@
 program main
-  use my_approach3
+  use my_approach1
 
   real(4), dimension(2) :: a
   a(1) = 1.0

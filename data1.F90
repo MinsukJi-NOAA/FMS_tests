@@ -13,6 +13,6 @@ module my_data1
   end type grid_r8
 
   private
-  public :: grid_r4, grid_r8
+  public :: grid_r4, grid_r8, grid_base
 
 end module my_data1
