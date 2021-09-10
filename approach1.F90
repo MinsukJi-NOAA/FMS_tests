@@ -1,7 +1,7 @@
 module my_approach1
   use my_data1
 
-  class(*), allocatable, target :: grid
+  class(grid_base), allocatable, target :: grid
 
 contains
 
