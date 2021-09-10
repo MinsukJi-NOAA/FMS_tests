@@ -3,7 +3,7 @@ module my_approach2
 
   type(grid_r4), allocatable, target :: gr_4
   type(grid_r8), allocatable, target :: gr_8
-  class(*), pointer :: grid
+  class(grid_base), pointer :: grid
 
 contains
 
@@ -50,6 +50,7 @@ contains
     type is (grid_r8)
       deallocate(gr_8)
     end select
+    if (associated(grid)) nullify(grid)
   end subroutine grid_end
 
 end module my_approach2
